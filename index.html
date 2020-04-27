@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tabelljs</title>
+	<style>
+		/*Tabeller*/
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-top: 20px;
+		}
+
+		table:first-of-type {
+			margin-top: 0;
+		}
+
+		td,
+		th {
+			border: 1px solid #000;
+			text-align: left;
+			padding: 8px;
+			width: calc(100% / 6);
+		}
+
+		tr:nth-child(even) {
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<div id="tabellParent"></div>
+</body>
+<script src="tabell.js"></script>
+<script src="script.js"></script>
+</html>
